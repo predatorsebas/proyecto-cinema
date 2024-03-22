@@ -32,14 +32,9 @@ a{
     color: var(--color-text);
 }
 
-#estrenos{
-    display: flex;
-    flex-wrap: wrap;
-}
-
 #estrenos img{
-    width: 250px;
-    height: 500px;
+    width: 200px;
+    height: 350px;
 }
 
 .main{
@@ -48,8 +43,11 @@ a{
 
 .estrenos{
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
 }
 
-.section-h2{
+h2{
     text-align: center;
 }
