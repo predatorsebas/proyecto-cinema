@@ -18,6 +18,8 @@ a{
     text-decoration: none;
 }
 
+/* elementos del header */
+
 .header{
     display: flex;
     background-color: var(--azul-oscuro);
@@ -31,6 +33,16 @@ a{
 
 .nav a{
     color: var(--color-text);
+}
+
+/* area de estrenos, primer section */
+
+.estrenos button{
+    background-color: var(--azul-oscuro);
+    color: var(--color-text);
+}
+.estrenos button a {
+    color: var(--color-text); 
 }
 
 #estrenos img{
@@ -67,21 +79,49 @@ main{
     background-color: antiquewhite;
 }
 
-.footer{
+
+#estrenos article div {
     display: flex;
-    background-color: var(--azul-oscuro);
-    color: var(--color-text);
-    width: 100%;
-    padding: 10px;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
 }
 
+.estrenos div p{
+    max-width: 200px;
+}
+
+/* area de peliculas */
+
+#peliculas img{
+    width: 200px;
+    height: 350px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: var(--azul-oscuro);
+    border-style: inset;  
+}
+
+.peliculas{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 100px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.peliculas figure{
+    width: calc(25% - 10px);
+}
+
+/* area formulario */
 #contacto p{
     text-align: center;
 }
+
 #contacto{
     padding: 50px 0;
-    background-color: aliceblue;
+    background-color: azure;
     text-align: center;
 }
 
@@ -101,13 +141,15 @@ main{
     border-width: 1px;
 }
 
-#estrenos article div {
+
+
+/* area del footer */
+.footer{
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 5px;
+    background-color: var(--azul-oscuro);
+    color: var(--color-text);
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
 }
 
-.estrenos div p{
-    max-width: 200px;
-}
